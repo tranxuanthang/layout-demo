@@ -22,6 +22,7 @@ body {
   grid-area: page-nav;
   height: 50px;
   background-color: rgb(133, 218, 199);
+  display: flex;
 }
 
 #page-left-sidebar {
@@ -36,10 +37,8 @@ body {
 
 #page-main {
   grid-area: page-main;
-  background-color: rgb(224, 213, 145);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, 100px);
   grid-gap: 12px;
 }
 
@@ -61,11 +60,13 @@ body {
 }
 
 .big {
-  grid-area: span 3 / span 3;
+  grid-area: span 1 / span 3;
   background-color: rgb(223, 49, 49);
+  height: 300px;
 }
 
 .small {
-  grid-area: span 2 / span 2;
+  grid-area: span 1 / span 2;
   background-color: rgb(170, 55, 55);
+  height: 200px;
 }
