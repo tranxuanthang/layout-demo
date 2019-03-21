@@ -6,7 +6,8 @@ body {
   grid-template-areas:
     "page-header page-header page-header"
     "page-nav page-nav page-nav"
-    "page-left-sidebar page-main page-right-sidebar";
+    "page-left-sidebar page-main page-right-sidebar"
+    "page-footer page-footer page-footer";
   grid-gap: 12px;
 }
 
@@ -40,6 +41,12 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 100px);
   grid-gap: 12px;
+}
+
+#page-footer {
+  grid-area: page-footer;
+  background-color: rgb(51, 51, 51);
+  height: 70px;
 }
 
 #logo {
