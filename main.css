@@ -70,3 +70,16 @@ body {
   background-color: rgb(170, 55, 55);
   height: 200px;
 }
+
+.nav-item {
+  padding: 8px;
+  align-self: center;
+}
+
+.nav-item-right {
+  margin-left: auto;
+}
+
+.nav-item:not(:nth-last-child(2)) {
+  border-right: 1px solid #000;
+}
